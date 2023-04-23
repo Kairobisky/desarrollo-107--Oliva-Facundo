@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+
+    <link rel="stylesheet" type="text/css" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="tp11_estilo.css">
+    <link rel="stylesheet" href="tp11_javascript.js">
+</head>
+
+<body>
+    <header class="bg-white py-3 shadow-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./images/logo.svg">
+                </div>
+                <div class="col-6">
+                    <nav class="d-flex justify-content-around h-100 align-items-center">
+                        <a href="#nosotros" class="font-weight-bold color-enlaces">Quienes somos</a>
+                        <a href="#como-funciona" class="font-weight-bold color-enlaces">Como funciona</a>
+                        <a href="#faqs" class="font-weight-bold color-enlaces">FAQS</a>
+                        <a href="#"
+                            class="font-weight-bold color-enlaces pink-button px-4 py-2 rounded-pill text-white">Login</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="fondo d-flex align-items-center justify-content-center">
+        <div class="h-50 w-50 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="font-weight-bold text-white text-center">Cada día, mejor</h2>
+            <p class="font-weight-bold text-white mx-4 text-center">La red más eficiente de profesionales para tu
+                desarrollo y bienestar emocional.</p>
+            <a href="#"
+                class="font-weight-bold color-enlaces pink-button px-4 py-2 rounded-pill text-white">COMENZAR</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="conocemos d-flex align-items-center justify-content-center flex-column">
+        <div class="container py-5">
+            <p class="text-center mb-0" style="font-size: 12px; color: #E12982; letter-spacing: 3px;">CONOCENOS</p>
+            <h2 class="text-center titulo">Quienes somos</h2>
+            <p class="text-center" style="font-size: 16px; color: #1F183A; margin: 35px 210px;">En <span
+                    class="font-weight-bold">Anima-T</span> colaboramos con la construcción de un mundo mejor a partir
+                de empoderar y habilitar a las personas para que alcancen su mejor versión.
+                A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para
+                facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en
+                cualquier momento y en cualquier lugar.</p>
+        </div>
+
+    </section>
+
+    <section class="py-5" id="como-funciona">
+        <div class="container">
+            <p class="text-center mb-0" style="font-size: 12px; color: #E12982; letter-spacing: 3px;">COMO FUNCIONA</p>
+            <h2 class="text-center titulo">¿Buscas ayuda?</h2>
+        </div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col">
+                    <img src="./images/icono-preguntas.svg" class="rounded mx-auto d-block">
+                </div>
+                <div class="col">
+                    <img src="./images/icono-profesionales.svg" class="rounded mx-auto d-block">
+                </div>
+                <div class="col">
+                    <img src="./images/icono-agenda.svg" class="rounded mx-auto d-block">
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <p class="text-center color-numeros mb-0">01.</p>
+                    <p class="text-center color-enlaces ">Responde unas preguntas para conocer tu perfil y lo que
+                        buscás.</p>
+                </div>
+                <div class="col">
+                    <p class="text-center color-numeros mb-0">02.</p>
+                    <p class="text-center color-enlaces ">Accede al ranking de profesionales que construimos para
+                        ayudarte.</p>
+                </div>
+                <div class="col">
+                    <p class="text-center color-numeros mb-0">03.</p>
+                    <p class="text-center color-enlaces ">Acuerda un encuentro virtual para comenzar tu proceso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fd-rosa">
+        <div class="d-flex align-items-center justify-content-center py-5">
+            <p class="text-white font-weight-bold mb-0" style="font-size: 22px; ">Si brindas ayuda y te interesa sumarte
+            </p>
+            <a href="#" class="font-weight-bold color-enlaces pink-button px-2 py-2 rounded-pill text-white border ml-4"
+                style="font-size: 16px;">Hacé click aquí</a>
+        </div>
+    </section>
+
+    <section class="conocemos py-5" id="faqs">
+        <div class="container">
+            <p class="text-center mb-0" style="font-size: 12px; color: #E12982; letter-spacing: 3px;">CONOCENOS</p>
+            <h2 class="text-center titulo">Preguntas frecuentes</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-around">
+                    <div>
+                        <button class="pregunta btn btn-primary d-flex shadow-sm" type="button" data-toggle="collapse"
+                            data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <p class="mb-0">Pregunta 1</p> 
+                                <i class="arrow bi bi-chevron-down d-flex align-items-center justify-content-center"></i>
+                            </div> 
+                        </button>
+                        <div class="collapse" id="collapse1">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="pregunta btn btn-primary d-flex shadow-sm" type="button" data-toggle="collapse"
+                            data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <p class="mb-0">Pregunta 2</p> 
+                                <i class="arrow bi bi-chevron-down d-flex align-items-center justify-content-center"></i>
+                            </div> 
+                        </button>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="pregunta btn btn-primary d-flex shadow-sm" type="button" data-toggle="collapse"
+                            data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <p class="mb-0">Pregunta 3</p> 
+                                <i class="arrow bi bi-chevron-down d-flex align-items-center justify-content-center"></i>
+                            </div> 
+                        </button>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="pregunta btn btn-primary d-flex shadow-sm" type="button" data-toggle="collapse"
+                            data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <p class="mb-0">Pregunta 4</p> 
+                                <i class="arrow bi bi-chevron-down d-flex align-items-center justify-content-center"></i>
+                            </div> 
+                        </button>
+                        <div class="collapse" id="collapse4">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="pregunta btn btn-primary d-flex shadow-sm" type="button" data-toggle="collapse"
+                            data-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <p class="mb-0">Pregunta 5</p> 
+                                <i class="arrow bi bi-chevron-down d-flex align-items-center justify-content-center"></i>
+                            </div> 
+                        </button>
+                        <div class="collapse" id="collapse5">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/ilustracion-faqs.svg">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="fondo-secundario d-flex align-items-center justify-content-center flex-column">
+        <h2 class="text-white text-center mb-4" style="font-size: 28px; font-weight: 800;">Desarróllate hacia tus
+            sueños, fácil, rápido y desde cualquier lugar</h2>
+        <a href="#" class="font-weight-bold color-enlaces pink-button px-4 py-2 rounded-pill text-white">COMENZAR</a>
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="container py-3">
+            <div class="row border-bottom">
+                <div class="col py-3 d-flex align-items-center">
+                    <a href="#" class="text-white">Términos y condiciones</a>
+                    <a href="#" class="text-white ml-5">Contactanos</a>
+                </div>
+                <div class="col-2 d-flex justify-content-around align-items-center">
+                    <a href="#"> <i class="bi bi-facebook"></i> </a>
+                    <a href="#"> <i class="bi bi-instagram"></i> </a>
+                    <a href="#"> <i class="bi bi-linkedin"></i> </a>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center pt-3">
+                <p class="text-white text-center" style="font-size: 12px;"> © 2020 Todos los derechos reservados -
+                    anima-t </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>

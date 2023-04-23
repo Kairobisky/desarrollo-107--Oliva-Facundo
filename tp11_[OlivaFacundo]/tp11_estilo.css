@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: Nunito;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.titulo {
+    color: #22193F;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.fondo {
+    background-image: url(./images/banner-principal.jpg);
+    background-repeat: no-repeat;
+    height: 89vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-secundario {
+    background-image: url(./images/banner-secundario.jpg);
+    background-repeat: no-repeat;
+    height: 49vh;
+    background-size: cover;    
+}
+
+.iconos {
+    fill: white;
+}
+
+i {
+    font-size: 25px;
+    color: #E12982;
+}
+
+
+.pie-pagina {
+    background-color: #22193F;
+}
+
+.conocemos {
+    background-color: #E8E8E8;
+}
+
+.color-enlaces {
+    color: #22193F;
+}
+
+.color-numeros {
+    color: #E12982;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.fd-rosa {
+    background-color: #E12982;
+}
+
+.pink-button {
+    background-color: #E12982;
+}
+
+.pregunta {
+    width: 100%;
+    background-color: white;
+    border: none;
+    color: #22193F;
+    font-weight: 900;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pregunta:hover, .pregunta:focus, .pregunta:active {
+    background-color: #E12982 !important ; 
+}
+
+.arrow {
+    font-size: 20px;
+    -webkit-text-stroke: 2px
+}
+
+html {
+    scroll-behavior: smooth;
+}
