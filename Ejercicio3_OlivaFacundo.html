@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Ejercicio 3 </title>
+        <meta charset="Utf-8">
+    </head>
+    <body>
+        <script type="text/Javascript">                   
+            var aux = 25;  // VARIABLE DE PRUEBA
+
+                    // DATOS QUE INGRESA EL USUARIO
+            // Inputs ejercicio 2
+            ing2 = prompt('Ingrese un valor: ');
+            ing3 = prompt('Ingrese un ingrese otro valor: ');
+
+            // Inputs ejercicio 3
+            inter1 = prompt('Ingrese un valor numerico: ');
+            inter2 = prompt('Ingrese un otro valor numerico: ');
+
+            // Input ejercicio 4
+            lado_cuadrado = prompt('Ingrese el valor de un lado del cuadrado: ');
+
+            // Input ejercicio 5
+            fahrenheit = prompt('Ingrese una temperatura en fahrenheit: ');
+
+            // Input ejercicio 6
+            factor = prompt('Ingrese un valor para factorizar: ');
+
+            // Input ejercicio 7
+            cadena_str = prompt('Ingrese una cadena para determinar si es palíndromo: ')
+
+            // Input ejercicio 8
+            cadenaACambiar = prompt('Ingrese una cadena de texto: ')
+
+            // Input ejercicio 9
+            nota = prompt('Ingrese la nota obtenida: ');
+
+            // Input ejercicio 10
+            mes = prompt('Ingrese numero del mes: ');
+
+            // Input ejercicio 11
+            piramide = prompt('Ingrese un numero: ');
+
+            // Inputs ejercicio 12
+            stock = prompt('Cantidad de bultos en stock: ');
+            caja = prompt('Cantidad de bultos que entran en una caja: ');
+
+            // Input ejercicio 13
+            codigo = prompt('Ingrese el codigo para saber su descuento: ');
+
+                    // FUNCIONES
+
+            function ejercicio1(dat){ // Ejercicio 1
+                var tipoDeDato= typeof(dat);
+                
+                console.log('El tipo de dato es: ' + tipoDeDato);
+                return tipoDeDato;
+            };
+        
+            function ejercicio2(num1, num2) { // Ejercicio 2
+                var resta;
+                resta = num1 - num2;
+
+                console.log('El resultado de la resta es: ', resta)
+                return resta;
+            }
+
+            function ejercicio3(a, b) { // Ejercicio 3
+                let ayuda;
+                ayuda = a;
+                a = b;
+                b = ayuda;
+                
+                console.log('EL valor de A es:', a);
+                console.log('El valor de B es:', b);
+            }
+
+            function ejercicio4(lado) {  // Ejercicio 4
+                var perimetro= lado * 4;
+                var superficie= lado ** 2;
+
+                console.log('El perimetro del cuadrado es:', perimetro);
+                console.log('La superficie del cuadrado es:', superficie);
+            }
+            
+            function ejercicio5 (tem) { // Ejercicio 5
+                var celsius = (tem - 32)/1.8;
+        
+                console.log('La temperatura en grados Celsius es: ', celsius);
+                return celsius;
+            }
+
+            function ejercicio6 (num) { // Ejercicio 6
+                var factorial = 1;
+                for (i=1; i <= num; i++)  {
+                    factorial = factorial * i;
+                }
+                console.log('El resultado de factorial es: ', factorial);
+                return factorial;
+            }
+
+            function ejercicio7 (cadena) { // Ejercicio 7
+                cadena = cadena.replace(/\s*/g, '');
+
+                return cadena == cadena.split('').reverse().join('');
+            }
+
+            function ejercicio8 (cadena1) { // Ejercicio 8
+                cadena1 = cadena1.toLowerCase();
+                console.log(cadena1);
+
+                cadena1 = cadena1.toUpperCase();
+                console.log(cadena1);
+            }
+
+            function ejercicio9 (nota) { // Ejercicio 9
+                switch (Math.floor(nota)) {
+                    
+                    case 0:
+                    case 1:
+                    case 2:
+                        console.log('Su calificacion es Muy deficiente');
+                    break;
+
+                    case 3:
+                    case 4:
+                        console.log('Su calificacion es Insuficiente');
+                    break;
+
+                    case 5:
+                        console.log('Su calificacion es Suficiente');
+                    break;
+
+                    case 6:
+                        console.log('Su calificacion es Bien');
+                    break;
+
+                    case 7:
+                    case 8:
+                        console.log('Su calificacion es Notable');
+                    break;
+
+                    case 9:
+                    case 10:
+                        console.log('Su calificacion es Sobresaliente');
+                    break;
+
+                    default:
+                        console.log('Su calificacion es: ' + nota);
+                    break;
+                }
+            }
+
+            function ejercicio10 (mes) { // Ejercicio 10
+                switch (Math.floor(mes)) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        console.log('Este mes tiene 31 dias')
+                    break;
+
+                    case 2:
+                        console.log('Este mes tiene 28 dias')
+                    break;
+
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:
+                        console.log('Este mes tiene 30 dias')
+                    break;
+
+                    default:
+                        console.log('El mes que ingreso es: ' + mes)
+                    break;
+                }
+            }
+
+            function ejercicio11 (num) { // Ejercicio 11
+                if (num > 0 && num <= 10) {
+                    let cad = '';
+                    for (let i = 1;i <= num; i++) {
+                        cad = cad + i.toString();
+
+                        console.log(cad);
+                    }
+                }
+            }
+            
+            function ejercicio12 (stonk, caja) { // Ejercicio 12
+                let total = stonk / caja
+                let resto = stonk % caja
+
+                console.log('Se pueden completar:', Math.trunc(total), 'Cajas.');
+                console.log('Los bultos sueltos son:', resto);
+            }
+
+            function ejercicio13 (cod) { // Ejercicio 13
+                switch (cod) {
+                    case 'fiesta':
+                        console.log('Su descuento es del 5%.');
+        
+                    break;
+                    case 'focus':
+                        console.log('Su descuento es del 10%');
+                    break;
+
+                    default:
+                        console.log('No posee descuento.')
+                    break;
+                }
+            }
+
+
+                    // INVOCACIONES
+            ejercicio1(aux);  // Invocacion ejercicio 1
+
+            ejercicio2(ing2, ing3); // Invocacion ejercicio 2
+
+            ejercicio3(inter1, inter2); // Invocacion ejercicio 3
+
+            ejercicio4(lado_cuadrado); // Invocacion ejercicio 4
+
+            ejercicio5(fahrenheit); // Invocacion ejercicio 5
+
+            ejercicio6(factor); // Invocacion ejercicio 6
+
+            console.log(ejercicio7(cadena_str)); // Invocacion ejercicio 7
+
+            ejercicio8(cadenaACambiar); // Invocacion ejercicio 8
+
+            ejercicio9(nota); // Invocacion ejercicio 9
+
+            ejercicio10(mes); // Invocacion ejercicio 10
+
+            ejercicio11(piramide); // Invocacion ejercicio 11
+
+            ejercicio12(stock, caja); // Invocacion ejercicio 12
+
+            ejercicio13(codigo); // Invocacion ejercicio 13
+
+        </script>
+    </body>
+</html>
