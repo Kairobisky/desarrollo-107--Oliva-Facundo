@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Ejercicio 6 </title>
+        <link rel="stylesheet" type="text/css" href="css/estilo2.css">
+    </head>
+    <body>
+        <script>
+            // Ejercicio 1
+            var marca = 'Chevrolet';
+            console.log(typeof(marca));
+            marca = 4;
+            console.log(typeof(marca));
+
+            // Ejercicio 2
+            var a = 10;
+            var b = 3;
+            var c = 15;
+
+            a++;
+            b--;
+            console.log(a);
+            console.log(b);
+
+            var suma = a + b;
+            console.log(suma);
+
+            console.log(a==c);
+
+            if (c == '15') {
+                var d = a + c;
+                console.log(d);
+            }
+            
+            if (a == '10') {
+                var e = a + b;
+                console.log(e);
+            }
+
+            // Ejercicio 4
+
+            var vector = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+            
+            for (var i = 0; i < vector.length; i++) {
+                console.log('Elemento' + i + ':' + vector[i]);
+            }
+
+            var alumno = [
+		        {apellido: "Bazán", nombre: "Juan", edad:30},
+		        {apellido: "Carrazana", nombre: "Nadia", edad:23},
+		        {apellido: "Diaz", nombre: "Elena", edad:19}];
+
+            for (var i = 0; i < alumno.length; i++) {
+		        console.log("Alumno " + alumno[i].apellido + ", " + alumno[i].nombre);
+	        }
+            
+        </script>
+
+        <ul class="caja-flexible">
+            <li class="item-flexible">1</li>
+            <li class="item-flexible">2</li>
+            <li class="item-flexible">3</li>
+            <li class="item-flexible">4</li>
+            <li class="item-flexible">5</li>
+            <li class="item-flexible">6</li>
+            <li class="item-flexible">7</li>
+            <li class="item-flexible">8</li>
+            <li class="item-flexible">9</li>
+            <li class="item-flexible">10</li>
+        </ul>
+        
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.caja-flexible {
+    display: flex;
+    background-color: blanchedalmond;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+
+.item-flexible {
+    background-color: tomato;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+  
