@@ -25,21 +25,20 @@
 
     <script>
         $(document).ready(function() {
-            $('#enviar').click(function() {
-                var nombre = $('#nombre').val();
-                var trabajo = $('#trabajo').val();
+            $("#enviar").click(function() {
+                var nombre = $("#nombre").val();
+                var trabajo = $("#trabajo").val();
                 $.ajax({
-                    url: 'procesar.php',
-                    method: 'POST',
+                    method: "POST",
+                    url: "procesar.php",
                     data {nombre: nombre, trabajo: trabajo},
                     success: function(respuesta) {
                         console.log(respuesta);
-                        $('#respuesta').html(respuesta);
+                        $("#respuesta").html(respuesta);
                     }
                 });
             });
         });
     </script>
-    
 </body>
 </html>
