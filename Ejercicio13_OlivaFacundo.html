@@ -39,6 +39,18 @@
                 });
             });
         });
+
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $nombre = $_POST["nombre"];
+            $trabajo = $_POST["trabajo"];
+            $respuesta = "Hola, $nombre. Tu trabajo es $trabajo.";
+            echo $respuesta;
+        }
+        ?>
     </script>
+
+    
+
 </body>
 </html>
