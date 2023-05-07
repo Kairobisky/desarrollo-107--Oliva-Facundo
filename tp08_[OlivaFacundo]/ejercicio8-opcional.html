@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 Opcional</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section id="init">
+        <h1> Mis Cursos </h1>
+    </section>
+
+    <ul>
+        <h3> Mi listado de alumnos </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th> Orden </th>
+                    <th> Apellido </th>
+                    <th> Nombre </th>
+                    <th> Edad </th>
+                    <th> Ver </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> <strong> Apellido1 </strong> </td>
+                    <td> <em> Nombre1 </em> </td>
+                    <td> 25 </td>
+                    <td> <a href="#alumno_1"> Ver </a> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Apellido2</strong></td>
+                    <td><em>Nombre2</em></td>
+                    <td>28</td>
+                    <td><a href="#alumno_2">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Apellido3</strong></td>
+                    <td><em>Nombre3</em></td>
+                    <td>22</td>
+                    <td><a href="#alumno_3">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Apellido4</strong></td>
+                    <td><em>Nombre4</em></td>
+                    <td>30</td>
+                    <td><a href="#alumno_4">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Apellido5</strong></td>
+                    <td><em>Nombre5</em></td>
+                    <td>27</td>
+                    <td><a href="#alumno_5">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Apellido6</strong></td>
+                    <td><em>Nombre6</em></td>
+                    <td>24</td>
+                    <td><a href="#alumno_6">Ver</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <img src="images/alumnos.jpg" alt="Foto de alumnos" width="400">
+
+        <section id="alumno_1">
+            <h4>Apellido1, Nombre1</h4>
+            <img src="images/alumno1.jpg" alt="Foto de alumno 1">
+            <p>Edad: 25</p>
+        </section>
+
+        <section id="alumno_2">
+            <h4>Apellido2, Nombre2</h4>
+            <img src="images/alumno2.jpg" alt="Foto de alumno 2">
+            <p>Edad: 28</p>
+        </section>
+
+        <div class="form">
+            <form action="#">
+                <div class="input-box">
+                    <label>Apellido</label>
+                    <input type="text" class="apellido">
+                </div>
+                <div class="input-box">
+                    <label>Nombre</label>
+                    <input type="text" class="nombre">
+                </div>
+                <div class="input-box">
+                    <label>Edad</label>
+                    <input type="number" class="edad">
+                </div>
+                <div class="input-box">
+                    <label for="estudios">Estudios</label>
+                        <select id="estudios">
+                            <option value="1">No definido</option>
+                            <option value="2">Primarios</option>
+                            <option value="3">Secundarios</option>
+                            <option value="4">Terciarios</option>
+                            <option value="5">Universitarios</option>
+                        </select>
+                </div>
+            </form>
+        </div>
+
+        <a href="#init"> Ir Arriba </a>
+</body>
+</html>

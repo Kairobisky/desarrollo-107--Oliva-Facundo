@@ -1,0 +1,65 @@
+ul {
+    background-color: #00b386;
+    color: white;
+    list-style: none;
+}
+li {
+    background-color: #00b386;
+    color: white;
+}
+
+h1, h3 {
+    color: #ff8c1a;
+}
+
+table {
+    background-color: WhiteSmoke;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    font-weight: bold;
+}
+
+.alumno_par {
+    background-color: GhostWhite;
+    font-weight: bold;
+    font-size: 12px;
+}
+.alumno_impar {
+    background-color: Snow;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.ver {
+    color: #00b3b3;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ver:hover {
+    background-color: #00b3b3;
+    color: white;
+}
+
+#ir-arriba {
+    color: #ff8c1a;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #ff8c1a;
+    border-radius: 5px;
+}
+#ir-arriba:hover {
+    background-color: #ff8c1a;
+    color: white;
+}
